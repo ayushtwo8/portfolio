@@ -42,12 +42,7 @@ const Navbar = () => {
           >
             Projects
           </a>
-          <a
-            href="#contact"
-            className="hover:text-white transition cursor-pointer"
-          >
-            Contact
-          </a>
+          
         </div>
       </div>
     </div>

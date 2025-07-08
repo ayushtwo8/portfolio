@@ -86,13 +86,13 @@ const Skills = () => {
   });
 
   return (
-    <section className="bg-black py-16 sm:py-20">
+    <section className="-mx-8 -mt-18 py-16 sm:py-20 font-mono">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className="text-center text-3xl font-bold tracking-tight text-yellow-500 sm:text-4xl">
+        <h2 className=" text-white/90 text-lg font-medium mt-2">
           My Tech Stack
         </h2>
 
-        <div className="mt-12 w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+        <div className="mt-10 mx-12 w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
           {/* 4. A container for our two rows */}
           <div className="flex flex-col gap-4">
             {/* Top Row */}
