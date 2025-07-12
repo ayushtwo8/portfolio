@@ -32,7 +32,7 @@ export default function Index() {
     {
       title: "Brainboard",
       github: "https://github.com/ayushtwo8/brainboard",
-      live: "https://github.com/ayushtwo8/brainboard",
+      live: "",
       tech: "React.js, Node.js, Express.js, MongoDB, TypeScript, Tailwind CSS",
       highlights: [
         "Built Brainboard, a full-stack 'second brain' web app to store and organize content from platforms like X(Twitter), Youtube and articles, enabling seamless saving, searching and sharing.",
@@ -42,8 +42,8 @@ export default function Index() {
     },
     {
       title: "Buzzly",
-      github: "https://github.com/ayushtwo8/buzzly-react",
-      live: "https://github.com/ayushtwo8/buzzly-react",
+      github: "https://github.com/ayushtwo8/Buzzly-socket.io",
+      live: "",
       tech: "React.js, Node.js, Socket.IO, MongoDB, Tailwind CSS",
       highlights: [
         "Developed a real-time chat platform using React.js for a dynamic frontend and Node.js with Socket.IO for efficient, low-latency communication.",
