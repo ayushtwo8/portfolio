@@ -54,50 +54,35 @@ export default function Index() {
   ];
 
   return (
-    <div
-      className="bg-black w-full min-h-screen font-mono text-justify"
-      style={{
-        backgroundImage: `
-        linear-gradient(to right, #090909 1px, transparent 1px),
-        linear-gradient(to bottom, #090909 1px, transparent 1px)
-      `,
-        backgroundSize: "40px 40px",
-      }}
-    >
+    <div className="w-full min-h-screen font-mono text-justify">
       <Navbar />
 
-      {/* Centered Main Content Container */}
-      <main className="mx-auto max-w-3xl px-6 py-20">
+      <div className="mx-auto max-w-5xl px-6 py-20">
         <section className="mb-16">
-          <h1 className="text-yellow-600 text-3xl font-bold">Ayush Tiwari</h1>
-          <h2 className="text-white/90 text-lg font-medium mt-2">
-            About Me
-          </h2>
-          <p className="text-white/70 text-md font-normal max-w-xl mt-4">
-            I'm Ayush, a full-stack developer from Indore, India. I enjoy
-            building web apps that work well, look good, and provide a great
-            user experience.
+          <h1 className="text-yellow-600 text-2xl font-bold">Ayush Tiwari</h1>
+          <h2 className="text-white/90 text-lg font-medium mt-2">About Me</h2>
+          <p className="text-white/70 text-md font-normal max-w-xl mt-2">
+            I'm Ayush, a full-stack developer based in Indore, India, specializing in the
+            MERN stack. I build efficient and user-friendly web applications
+            with a focus on clean, modern code.
           </p>
         </section>
 
         {/* Experience Section */}
-        <section id="experience" className="mb-16">
-          <h2 className="text-2xl font-bold mb-8 text-white/90">Experience</h2>
-          <div className="relative border-l border-neutral-800 pl-8 space-y-12 hover:border-neutral-700">
+        <section id="experience" className=" text-white mb-16">
+          <h2 className="text-white/90 text-lg font-medium mb-4">Experience</h2>
+          <div className="mx-40 mt-12 relative border-l hover:border-neutral-600 transition border-neutral-800 pl-6 pt-4 space-y-12">
             {experiences.map((exp, index) => (
               <div key={index} className="relative">
-                <span className="absolute -left-[33px] top-1.5 h-4 w-4 rounded-full bg-neutral-400 border-2 border-black" />
-                <div className="absolute -left-[10.5rem] top-0 w-auto bg-neutral-900 text-white text-xs px-2 py-1 rounded-md text-center">
+                <span className="absolute -left-8 top-1.5 h-4 w-4 rounded-full bg-neutral-400 border-2 border-black" />
+
+                <div className="absolute -left-36  w-[6.5rem] bg-neutral-900 text-white text-xs px-2 py-1 rounded-md text-center">
                   {exp.duration.toUpperCase()}
                 </div>
                 <div>
-                  <h3 className="text-lg font-semibold text-white/90">
-                    {exp.title}{" "}
-                    <span className="font-normal text-white/70">
-                      @ {exp.company}
-                    </span>
-                  </h3>
-                  <ul className="list-disc pl-5 space-y-1 text-sm text-neutral-400 mt-2 ">
+                  <h3 className="text-lg font-semibold">{exp.title}</h3>
+
+                  <ul className="list-disc pl-5 space-y-1 text-sm text-neutral-400">
                     {exp.highlights.map((item, i) => (
                       <li key={i}>{item}</li>
                     ))}
@@ -109,20 +94,20 @@ export default function Index() {
         </section>
 
         {/* Skills */}
-        <div className="mb-16">
-          <Skills />
-        </div>
+        <Skills />
 
         {/* Project section */}
-        <section id="projects">
-          <h2 className="text-2xl font-bold mb-8 text-white/90">Projects</h2>
-          <div className="flex flex-col gap-8">
+        <section id="projects" className="-mx-16 text-white px-4 md:px-16">
+          <h2 className="text-white/90 text-lg font-medium mb-12">Projects</h2>
+
+          <div className="flex flex-col gap-8 mx-10">
             {projects.map((project, idx) => (
               <div
                 key={idx}
-                className="border border-neutral-900 rounded-xl p-6 space-y-4 hover:border-neutral-700 hover:bg-black transition"
+                className=" border border-neutral-900 rounded-lg p-6 space-y-4 hover:shadow-md transition"
               >
                 <h3 className="text-xl font-semibold">{project.title}</h3>
+
                 <div className="flex flex-wrap gap-2">
                   {project.tech.split(", ").map((tech, i) => (
                     <span
@@ -133,11 +118,13 @@ export default function Index() {
                     </span>
                   ))}
                 </div>
+
                 <ul className="list-disc pl-5 space-y-1 text-sm text-neutral-400">
                   {project.highlights.map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
                 </ul>
+
                 <div className="flex gap-6 pt-2">
                   {project.live && (
                     <a
@@ -167,39 +154,39 @@ export default function Index() {
           </div>
         </section>
 
-        <footer className="py-6 text-center text-neutral-500 text-sm mt-20">
+        <footer className=" py-6 text-center text-neutral-500 text-sm mt-20">
           <div className="flex justify-center gap-6">
             <a
               href="https://github.com/ayushtwo8"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-2"
+              className="hover:text-white transition-colors"
             >
-              <Github className="w-4 h-4" />
+              <Github className="inline-block w-4 h-4 mr-1" />
               GitHub
             </a>
             <a
               href="https://www.linkedin.com/in/ayushtwo8/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-white transition-colors flex items-center gap-2"
+              className="hover:text-white transition-colors"
             >
-              <ExternalLink className="w-4 h-4" />
+              <ExternalLink className="inline-block w-4 h-4 mr-1" />
               LinkedIn
             </a>
             <a
               href="mailto:ayush8866@gmail.com"
-              className="hover:text-white transition-colors flex items-center gap-2"
+              className="hover:text-white transition-colors"
             >
-              <CgMail className="w-4 h-4" />
-              Email
+              <CgMail className="inline-block w-4 h-4 mr-1" />
+              ayush8866@gmail.com
             </a>
           </div>
-          <p className="mt-6 text-xs text-neutral-600">
+          <p className="mt-4 text-xs text-neutral-600">
             © {new Date().getFullYear()} Ayush Tiwari. All rights reserved.
           </p>
         </footer>
-      </main>
+      </div>
     </div>
   );
 }

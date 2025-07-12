@@ -89,7 +89,7 @@ const Skills = () => {
     <section className="-mx-8 -mt-18 py-16 sm:py-20 font-mono">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <h2 className=" text-white/90 text-lg font-medium mt-2">
-          My Tech Stack
+          Technologies
         </h2>
 
         <div className="mt-10 mx-12 w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">

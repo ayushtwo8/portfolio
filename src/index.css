@@ -2,7 +2,15 @@
 @import "tw-animate-css";
 @import "keen-slider/keen-slider.min.css";
 
-
+body {
+  background-image:
+    linear-gradient(to right, #090909 1px, transparent 1px),
+    linear-gradient(to bottom, #090909 1px, transparent 1px);
+  background-size: 40px 40px;
+  background-color: #000; /* optional base */
+  color: white; /* optional default text color */
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+}
 
 @custom-variant dark (&:is(.dark *));
 
