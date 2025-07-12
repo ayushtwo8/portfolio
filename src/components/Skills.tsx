@@ -36,7 +36,7 @@ const skills = [
   { name: "JWT", icon: SiJsonwebtokens },
   { name: "GitHub", icon: SiGithub },
   { name: "Postman", icon: SiPostman },
-  { name: "VS Code", icon: VscVscode },
+  { name: "VSCode", icon: VscVscode },
 ];
 
 const half = Math.ceil(skills.length / 2);
@@ -86,29 +86,29 @@ const Skills = () => {
   });
 
   return (
-    <section className="-mx-8 -mt-18 py-16 sm:py-20 font-mono">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <h2 className=" text-white/90 text-lg font-medium mt-2">
+    <section className="-mx-4 sm:-mx-8 py-12 sm:py-16 lg:py-20 font-mono">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <h2 className="text-white/90 text-base sm:text-lg font-medium mt-2">
           Technologies
         </h2>
 
-        <div className="mt-10 mx-12 w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-          {/* 4. A container for our two rows */}
-          <div className="flex flex-col gap-4">
+        <div className="mt-6 sm:mt-10 mx-2 sm:mx-6 lg:mx-12 w-full [mask-image:_linear-gradient(to_right,transparent_0,_black_64px,_black_calc(100%-64px),transparent_100%)] sm:[mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+          {/* Container for our two rows */}
+          <div className="flex flex-col gap-3 sm:gap-4">
             {/* Top Row */}
             <div ref={sliderRefTop} className="keen-slider">
               {topRowSkills.map((skill, i) => (
                 <div
                   key={i}
                   className="keen-slider__slide"
-                  style={{ minWidth: "150px" }}
+                  style={{ minWidth: "120px" }}
                 >
-                  <div className="flex items-center justify-center gap-x-3 rounded-full border border-neutral-800 bg-neutral-900 px-4 py-2">
+                  <div className="flex items-center justify-center gap-x-2 sm:gap-x-3 rounded-full border border-neutral-800 bg-neutral-900 px-3 sm:px-4 py-1.5 sm:py-2">
                     <skill.icon
-                      className="h-6 w-6 text-cyan-400"
+                      className="h-4 w-4 sm:h-6 sm:w-6 text-cyan-400"
                       aria-hidden="true"
                     />
-                    <span className="text-sm font-medium text-neutral-300">
+                    <span className="text-xs sm:text-sm font-medium text-neutral-300">
                       {skill.name}
                     </span>
                   </div>
@@ -122,14 +122,14 @@ const Skills = () => {
                 <div
                   key={i}
                   className="keen-slider__slide"
-                  style={{ minWidth: "150px" }}
+                  style={{ minWidth: "120px" }}
                 >
-                  <div className="flex items-center justify-center gap-x-3 rounded-full border border-neutral-800 bg-neutral-900 px-4 py-2">
+                  <div className="flex items-center justify-center gap-x-2 sm:gap-x-3 rounded-full border border-neutral-800 bg-neutral-900 px-3 sm:px-4 py-1.5 sm:py-2">
                     <skill.icon
-                      className="h-6 w-6 text-cyan-400"
+                      className="h-4 w-4 sm:h-6 sm:w-6 text-cyan-400"
                       aria-hidden="true"
                     />
-                    <span className="text-sm font-medium text-neutral-300">
+                    <span className="text-xs sm:text-sm font-medium text-neutral-300">
                       {skill.name}
                     </span>
                   </div>
