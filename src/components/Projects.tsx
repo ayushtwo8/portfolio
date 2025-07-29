@@ -29,11 +29,11 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="text-white px-4 -mt-60 sm:px-6 lg:px-8"
+      className="text-white px-4 -mt-72 sm:px-6 lg:px-8"
     >
       <div className="max-w-6xl mx-auto">
         {/* Heading */}
-        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12">
+        <h2 className="text-3xl sm:text-4xl font-bold text-center mb-24">
           Projects
         </h2>
 

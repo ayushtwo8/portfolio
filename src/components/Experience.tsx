@@ -43,10 +43,10 @@ const Experience = () => {
 
             {/* Content */}
             <div className="space-y-2 text-justify">
-              <h3 className="text-lg font-semibold">{exp.title}</h3>
-              <p className="text-sm font-medium text-orange-400">
-                {exp.company}
-              </p>
+              <h3 className="text-lg font-semibold">{exp.title} 
+               <span className="text-sm font-medium ">
+                &nbsp;at {exp.company}
+              </span></h3>
               <ul className="list-disc pl-5 space-y-1 text-sm text-neutral-400">
                 {exp.highlights.map((item, i) => (
                   <li key={i}>{item}</li>
